@@ -2,10 +2,36 @@ body {
   background-color: red;
 }
 
-.border-example {
+.transparent-border {
   padding: 10px;
   border: 10px solid hsla(0, 0%, 100%, .5);
   background: white;
   /* default value is border-box */
   background-clip: padding-box;
+}
+
+.multiple-borders {
+  margin: 10px;
+  padding: 10px;
+  background: yellowgreen;
+  box-shadow: 0 0 0 10px #655,
+              0 0 0 15px deeppink,
+              0 2px 5px 15px rgba(0, 0, 0, .6);
+}
+
+.multiple-borders-2 {
+  margin: 10px;
+  padding: 10px;
+  background: yellowgreen;
+  border: 10px solid #655;
+  outline: 15px solid deeppink;
+}
+
+.stitched-border {
+  margin: 10px;
+  padding: 20px;
+  background: white;
+  border: 5px solid #655;
+  outline: 5px dashed black;
+  outline-offset: -20px;
 }
