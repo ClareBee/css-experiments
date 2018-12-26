@@ -1,0 +1,11 @@
+body {
+  background-color: red;
+}
+
+.border-example {
+  padding: 10px;
+  border: 10px solid hsla(0, 0%, 100%, .5);
+  background: white;
+  /* default value is border-box */
+  background-clip: padding-box;
+}
