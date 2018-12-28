@@ -59,3 +59,22 @@ body {
   background-color: white;
   opacity: 0.8;
 }
+
+.inner-rounding {
+  background: #644;
+  padding: .8em;
+}
+
+.inner-rounding > div {
+  background: tan;
+  border-radius: .8em;
+  padding: 1em;
+}
+
+.inner-rounding-box {
+  background: tan;
+  border-radius: .8em;
+  padding: 1em;
+  box-shadow: 0 0 0 .6em #655;
+  outline: .6em solid #655;
+}
