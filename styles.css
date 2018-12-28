@@ -78,3 +78,40 @@ body {
   box-shadow: 0 0 0 .6em #655;
   outline: .6em solid #655;
 }
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.container > div {
+  height: 200px;
+  width: 200px;
+}
+
+.container div div {
+  width: 50%;
+  padding: 5px;
+  background-color: white;
+  opacity: .6;
+}
+
+.striped-background {
+  background: linear-gradient(#fb3 50%, #58a 50%);
+}
+
+.striped-background-2 {
+  background: linear-gradient(#fb3 50%, #58a 50%);
+  background-size: 100% 30px;
+}
+
+.striped-background-3 {
+  background: linear-gradient(#fb3 30%, #58a 0);
+  background-size: 100% 30px;
+}
+
+.striped-background-4 {
+  background: linear-gradient(#fb3 30%, #58a 0, #58a 66.6%, yellowgreen 0);
+  background-size: 100% 45px;
+}
