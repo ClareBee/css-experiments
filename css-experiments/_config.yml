@@ -23,12 +23,16 @@ plugins:
   - jekyll-archives
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-twitter-plugin
-
-
+  - jekyll-paginate
+  - jemoji
+  - jekyll-relative-links
 sass:
   style: compact # possible values: nested expanded compact compressed
 
+paginate: 5
+
+algolia:
+  application_id: 'your_application_id'
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
