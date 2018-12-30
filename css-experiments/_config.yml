@@ -23,7 +23,7 @@ plugins:
   - jekyll-archives
   - jekyll-seo-tag
   - jekyll-sitemap
-  - ['jekyll-twitter-plugin']
+  - jekyll-twitter-plugin
 paginate: 5
 
 defaults:
