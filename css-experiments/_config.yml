@@ -24,15 +24,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-twitter-plugin
-paginate: 5
 
-defaults:
-  - scope:
-      path: "assets/img"
-    values:
-      image: true
-
-permalink: /:title/
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
