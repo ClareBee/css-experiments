@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "CSS Borders"
+date:   2018-12-31 12:04:50 +0000
+categories: jekyll css
+---
+<div class="transparent-border">
+  <p>Semi-transparent borders using background-clip: padding-box;</p>
+  <p>Default value is border-box, so padding-box tells browser to clip the background at the padding edge rather than the border box edge
+</div>
+<hr />
+<div class="multiple-borders">
+  <p>Using layered box-shadows to emulate multiple borders via the spread radius parameter with zero offsets and zero blur</p>
+  <p>First one is topmost, therefore should be smallest spread radius.</p>
+  <p><strong>But</strong> shadows don't affect layout and are oblivious to box-sizing (would need to compensate with padding/margin)</p>
+  <p><strong>Also</strong> don't react to mouse-events, so would need to use 'inset' keyword so shadows drawn inside the element, and add extra padding to compensate</p>
+</div>
+<hr />
+<div class="multiple-borders-2">
+  <p>If only 2 borders needed, 'outline' property  with 'border' allows for borderstyle too.</p>
+  <p>'outline-offset' also controls distance of outline from element boundaries, incl negative values.</p>
+  <p><strong>But</strong> doesn't work well with border-radius</p>
+</div>
+<hr />
+<div class="stitched-border">
+  <p>Stitching effect using negative outline-offset and a dashed outline.</p>
+</div>
