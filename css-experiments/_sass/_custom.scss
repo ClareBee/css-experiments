@@ -36,7 +36,7 @@
   height: 500px;
   padding: 10px 20px;
   color: black;
-  background: url(doggo.jpg) bottom right no-repeat #58a;
+  background: url(../img/doggo.jpg) bottom right no-repeat #58a;
   /* background-position: right 20px bottom 10px; */
   background-origin: content-box;
 }
@@ -45,7 +45,7 @@
   height: 500px;
   padding: 10px;
   color: black;
-  background: url(doggo.jpg) no-repeat #58a;
+  background: url(../img/doggo.jpg) no-repeat #58a;
   background-position: calc(100% - 20px) calc(100% - 10px);
 }
 
@@ -73,4 +73,67 @@
   padding: 1em;
   box-shadow: 0 0 0 .6em #655;
   outline: .6em solid #655;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.container > div {
+  height: 200px;
+  width: 200px;
+  margin: 5px;
+}
+
+.container div div {
+  width: 50%;
+  padding: 5px;
+  background-color: white;
+  opacity: .6;
+}
+
+.striped-background {
+  background: linear-gradient(#fb3 50%, #58a 50%);
+}
+
+.striped-background-2 {
+  background: linear-gradient(#fb3 50%, #58a 50%);
+  background-size: 100% 30px;
+}
+
+.striped-background-3 {
+  background: linear-gradient(#fb3 30%, #58a 0);
+  background-size: 100% 30px;
+}
+
+.striped-background-4 {
+  background: linear-gradient(#fb3 30%, #58a 0, #58a 66.6%, yellowgreen 0);
+  background-size: 100% 45px;
+}
+
+.striped-background-5 {
+  background: linear-gradient(to right, #fb3 30%, #58a 0, #58a 66.6%, yellowgreen 0);
+  background-size: 30px 100%;
+}
+
+.striped-background-6 {
+  background: linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+  background-size: 42px 42px;
+}
+
+.striped-background-7 {
+  background: repeating-linear-gradient(45deg, #fb3, #58a 30px);
+}
+
+.striped-background-8 {
+  background: repeating-linear-gradient(25deg, #fb3, #fb3 15px,  #58a 0, #58a 30px);
+}
+
+.striped-background-9 {
+  background: #58a;
+  background-image: repeating-linear-gradient(30deg, hsla(0, 0%, 100%, .1),
+                                                     hsla(0, 0%, 100%, .1) 15px,
+                                                     transparent 0, transparent 30px);
 }
