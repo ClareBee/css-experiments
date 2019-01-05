@@ -1,5 +1,12 @@
+---
+layout: page
+title: Contact
+---
 <form action="https://formspree.io/clarebee@protonmail.com" method="POST">
-  <input type="text" name="name">
-  <input type="email" name="_replyto">
+  <label for="name">Name:</label>
+  <input type="text" name="name" id="name">
+  <label for="email">Email:</label>
+  <input type="email" name="_replyto" id="email">
+  <textarea name="message" placeholder="Your Message"></textarea>
   <input type="submit" value="Send">
 </form>

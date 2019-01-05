@@ -1,9 +1,10 @@
 ---
 layout: post
-title: 'Useful links'
-categories: jekyll
+title:  "Useful Links!"
+date:   2018-12-30 12:00:50 +0000
+categories: jekyll update
 ---
-{:.my-custom-class}
+
 - [top links](https://github.com/jekyll)
 - [admin](https://jekyll.github.io/jekyll-admin/)
 - [picture tags](https://github.com/robwierzbowski/jekyll-picture-tag)

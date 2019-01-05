@@ -28,7 +28,8 @@ plugins:
   - jekyll-relative-links
 sass:
   style: compact # possible values: nested expanded compact compressed
-
+published: true
+future: true
 assets:
   sources:
     - assets/img
