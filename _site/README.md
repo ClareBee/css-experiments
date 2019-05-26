@@ -6,9 +6,6 @@ How to run:
 `bundle exec jekyll serve`
 `jekyll build` for prod
 ---
-After changes:
-`ALGOLIA_API_KEY='{your_api_key}' jekyll algolia  `
----
 App runs on http://127.0.0.1:4000/css-experiments/
 
 ## Features
