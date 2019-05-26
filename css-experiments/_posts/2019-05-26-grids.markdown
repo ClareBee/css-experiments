@@ -1,0 +1,54 @@
+---
+layout: post
+title:  "CSS Grids Using Linear Gradients"
+date:   2019-05-26 12:00:00 +0000
+categories: jekyll css
+---
+<div class="flex-container">
+  <div class="default-grid grid-style">
+  </div>
+  <div class="default-grid grid-lines">
+  </div>
+  <div class="default-grid blue-print">
+  </div>
+</div>
+<hr >
+<caption>
+<ul>
+  <li>
+    <strong>hsla(hue, saturation, lightness, alpha)</strong>
+  </li>
+</ul>
+<table>
+  <tbody>
+    <tr>
+      <th>
+        hue
+      </th>
+      <td>Defines a degree on the color circle (from 0 to 360) - 0 (or 360) is red, 120 is green, 240 is blue
+      </td>
+    </tr>
+    <tr>
+      <th>
+        saturation
+      </th>
+      <td>Defines the saturation; 0% is a shade of gray and 100% is the full color (full saturation)
+      </td>
+    </tr>
+    <tr>
+      <th>
+        lightness
+      </th>
+      <td>lightness	Defines the lightness; 0% is black, 50% is normal, and 100% is white
+      </td>
+    </tr>
+    <tr>
+      <th>
+        alpha
+      </th>
+      <td>Defines the opacity as a number between 0.0 (fully transparent) and 1.0 (fully opaque)
+      </td>
+    </tr>
+  </tbody>
+</table>
+</caption>
