@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "CSS Polka Dots Using Radial Gradients"
+date:   2019-05-28 12:00:00 +0000
+categories: jekyll css
+---
+<div class="flex-container">
+  <div class="default-grid polka-dots">
+  </div>
+  <div class="default-grid polka-dot-pattern">
+  </div>
+</div>
+<hr >
