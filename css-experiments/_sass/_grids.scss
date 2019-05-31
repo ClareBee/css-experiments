@@ -28,11 +28,11 @@
 }
 
 .linear-example {
-  background-image: linear-gradient(90deg, red, blue 15%);
+  background-image: linear-gradient(90deg, #A9E4EF, #8E8DBE 15%);
   background-size: 30px;
   background-position: center;
 }
 
 .radial-example {
-  background-image: radial-gradient(circle at center, red 0, blue, yellow 100%);
+  background-image: radial-gradient(circle at center, #7A306C 0, #8E8DBE, #A9E4EF 100%);
 }
