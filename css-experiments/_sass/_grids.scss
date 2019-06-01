@@ -36,3 +36,11 @@
 .radial-example {
   background-image: radial-gradient(circle at center, #7A306C 0, #8E8DBE, #A9E4EF 100%);
 }
+
+.border-frame {
+  padding: 1em;
+  border: 1em solid transparent;
+  filter: sepia(80%);
+  text-align: center;
+  background: linear-gradient(white, white) padding-box, url(../img/ripples.jpg) border-box 0 /cover;
+}
