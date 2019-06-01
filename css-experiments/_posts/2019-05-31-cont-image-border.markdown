@@ -8,9 +8,6 @@ categories: jekyll css
  Continuous image as a border example
 </div>
 
-Using white background to cover image background - with white added by a linear-gradient, since only the last layer can have a background-color.
-Default background-origin is padding-box, so needs to be set to border-box.
-
 ```css
 .border-frame {
   padding: 2em;
@@ -18,6 +15,22 @@ Default background-origin is padding-box, so needs to be set to border-box.
   background: linear-gradient(white, white) padding-box, url(../img/image.jpg) border-box 0 /cover;
 }
 ```
+
+Using white background to cover image background - with white added by a linear-gradient, since only the last layer can have a background-color.
+Default background-origin is padding-box, so needs to be set to border-box.
+
+<div class="default-grid gradient-pattern">
+ using repeating-linear-gradient
+</div>
+
+<div class="default-grid marching-ants">
+ using repeating-linear-gradient & keyframes
+</div>
+
+<div class="footnote">
+  <sup>1</sup> This is a footnote.
+</div>
+
 
 Background shorthand =
 `background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;`
