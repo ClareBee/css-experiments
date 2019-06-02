@@ -1,0 +1,35 @@
+---
+layout: post
+title:  "Flexible Ellipses"
+date:   2019-06-01 12:00:00 +0000
+categories: jekyll css
+---
+<div class="elliptical-rounding">
+</div>
+
+`border-radius` accepts different horizonal and vertical radii, if you use a slash to separate them:
+
+```css
+  border-radius: 100px / 75px;
+```
+
+<div class="elliptical-rounding-responsive">
+</div>
+
+`border-radius` also accepts percentages - resolving to width and height, therefore same percentage can compute to different values!
+
+`border-radius: 50% / 50%;` = `border-radius: 50%;`
+
+### Half Ellipses
+`border-radius` is shorthand for:
+border-top-left-radius/ border-top-right-radius/ border-bottom-right-radius/ border-bottom-left-radius
+
+<div class="half-ellipsis"></div>
+
+### Quarter Ellipses
+One corner is 100% rounded, the other three not:
+```css
+border-radius: 100% 0 0 0;
+```
+
+<div class="quarter-ellipsis"></div>

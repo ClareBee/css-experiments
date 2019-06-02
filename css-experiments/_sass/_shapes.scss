@@ -1,0 +1,31 @@
+.elliptical-rounding {
+  border-radius: 100px / 75px;
+  width: 200px;
+  height: 75px;
+  background-color: #8E8DBE;
+  margin-bottom: 50px;
+}
+
+.elliptical-rounding-responsive {
+  border-radius: 50% / 50%;
+  width: 200px;
+  height: 75px;
+  background-color: #A9E4EF;
+  margin-bottom: 50px;
+}
+
+.half-ellipsis {
+  height: 100px;
+  width: 200px;
+  margin-bottom: 50px;
+  background-color: #8E8DBE;
+  border-radius: 100% 0 0 100% / 50%;
+}
+
+.quarter-ellipsis {
+  height: 100px;
+  width: 200px;
+  margin-bottom: 50px;
+  background-color: #A9E4EF;
+  border-radius: 100% 0 0 0;
+}
