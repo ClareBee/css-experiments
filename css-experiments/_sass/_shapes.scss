@@ -29,3 +29,55 @@
   background-color: #A9E4EF;
   border-radius: 100% 0 0 0;
 }
+
+.button {
+  position: relative;
+  background: transparent;
+  color: white;
+  height: 50px;
+  width: 100px;
+  padding: .5em 1em;
+  border: 0;
+  margin: .5em;
+  text-decoration: none;
+  text-transform: uppercase;
+  font: 100% 'Helvetica', sans-serif;
+}
+
+.button::before {
+  content: ''; //to generate the box
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: #A9E4EF;
+  transform: skew(45deg);
+  box-shadow: 8px 8px 5px -6px rgba(143,135,143,1);
+}
+
+.skewy {
+  position: relative;
+  height: 50px;
+  width: 100px;
+  background: transparent;
+  padding: .5em 1em;
+  border: 0;
+  margin: .5em;
+  color: white;
+  text-align: center;
+}
+
+.skewy::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transform: skew(-33deg);
+  background: #8E8DBE;
+  box-shadow: 8px 8px 5px -6px rgba(143,135,143,1);
+}
