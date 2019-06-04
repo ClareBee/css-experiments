@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Diamond Images"
+date:   2019-06-05 12:00:00 +0000
+categories: jekyll css
+---
+
+<div class="diamond">
+  <img src="{{site.baseurl}}/assets/img/ripples.jpg" alt="robot" />
+</div>
+
+<caption> Using transform rotate on div and img inside it, with scale to fit the diagonal (Pythagorean theorem!)</caption>

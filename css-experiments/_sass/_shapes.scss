@@ -81,3 +81,17 @@
   background: #8E8DBE;
   box-shadow: 8px 8px 5px -6px rgba(143,135,143,1);
 }
+
+.diamond {
+  width: 200px;
+  height: 200px;
+  transform: rotate(45deg);
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.diamond > img {
+  max-width: 100%;
+  height: 100%;
+  transform: rotate(-45deg) scale(1.42);
+}
