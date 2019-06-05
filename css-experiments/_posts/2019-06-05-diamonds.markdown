@@ -6,7 +6,13 @@ categories: jekyll css
 ---
 
 <div class="diamond">
-  <img src="{{site.baseurl}}/assets/img/ripples.jpg" alt="robot" />
+  <img src="{{site.baseurl}}/assets/img/ripples.jpg" alt="ripples" />
 </div>
 
 <caption> Using transform rotate on div and img inside it, with scale to fit the diagonal (Pythagorean theorem!)</caption>
+
+<hr>
+
+<img src="{{site.baseurl}}/assets/img/ripples.jpg" class="clip-image" />
+
+Using clip-path (borrowed from svg) to draw a polygon & transition on hover to manipulate the dimensions!
