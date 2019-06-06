@@ -1,0 +1,19 @@
+.cutout-corner {
+  width: 100px;
+  height: 100px;
+  background: #A9E4EF;
+  background: linear-gradient(-45deg, transparent 15px, #A9E4EF 0);
+}
+
+.cutout-corners {
+  width: 100px;
+  height: 100px;
+  background: #A9E4EF;
+  background:
+      linear-gradient(135deg, transparent 15px, #A9E4EF 0) top left,
+      linear-gradient(-135deg, transparent 15px, #A9E4EF 0) top right,
+      linear-gradient(-45deg, transparent 15px, #A9E4EF 0) bottom right,
+      linear-gradient(45deg, transparent 15px, #A9E4EF 0) bottom left;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+}
