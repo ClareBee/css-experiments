@@ -36,10 +36,6 @@ assets:
     - assets/css
 paginate: 5
 
-algolia:
-  application_id: 'JK87YM28CH'
-  index_name: jekyll
-  search_only_api_key: 337defa564b2863b1cd93f58618fd12a
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
