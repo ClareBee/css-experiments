@@ -11,7 +11,6 @@ App runs on http://127.0.0.1:4000/css-experiments/
 ## Features
 - Favicon
 - Pagination
-- Algolia search functionality (https://www.algolia.com/)
 - RSS feed
 - Jekyll Admin (https://jekyll.github.io/jekyll-admin/)
 - Written in: Liquid, Kramdown, Markdown, HTML5, Sass
