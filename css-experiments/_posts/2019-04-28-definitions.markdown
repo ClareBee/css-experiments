@@ -2,7 +2,7 @@
 layout: post
 title:  "CSS Linear and Radial Gradients"
 date:   2019-04-28 12:00:00 +0000
-categories: jekyll css
+categories: CSS
 ---
 <div class="flex-container">
   <div class="default-grid linear-example">

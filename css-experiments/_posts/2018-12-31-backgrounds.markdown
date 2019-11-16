@@ -2,7 +2,7 @@
 layout: post
 title:  "CSS Backgrounds"
 date:   2018-12-31 13:04:50 +0000
-categories: jekyll css
+categories: CSS
 ---
 <div class="flexible-background">
   <div>

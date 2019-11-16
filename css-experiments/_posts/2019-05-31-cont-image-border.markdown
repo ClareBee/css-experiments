@@ -2,7 +2,7 @@
 layout: post
 title:  "Continuous Image Border"
 date:   2019-05-31 12:00:00 +0000
-categories: jekyll css
+categories: CSS
 ---
 <div class="default-grid border-frame">
  Continuous image as a border example

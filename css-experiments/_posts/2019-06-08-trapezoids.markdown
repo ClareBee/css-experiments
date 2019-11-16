@@ -2,7 +2,7 @@
 layout: post
 title:  "Trapezoid Tabs"
 date:   2019-06-08 12:00:00 +0000
-categories: jekyll css
+categories: CSS
 ---
 <div class="trapezoid">Trapezoid</div>
 <p>Trapezoid using transform with scaleY, perspective & rotate with a pseudo-element</p>

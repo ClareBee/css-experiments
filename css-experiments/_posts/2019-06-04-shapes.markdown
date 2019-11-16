@@ -2,7 +2,7 @@
 layout: post
 title:  "Parallelograms"
 date:   2019-06-04 12:00:00 +0000
-categories: jekyll css
+categories: CSS
 ---
 <section>
   <button class="button"><div>Click me</div></button>

@@ -2,7 +2,7 @@
 layout: post
 title:  "Pseudo-Random Backgrounds"
 date:   2019-05-30 12:00:00 +0000
-categories: jekyll css
+categories: CSS
 ---
 <div class="default-grid random-pattern">
 </div>

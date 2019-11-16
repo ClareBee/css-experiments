@@ -2,7 +2,7 @@
 layout: post
 title:  "Cutout Corners"
 date:   2019-06-05 12:00:00 +0000
-categories: jekyll css
+categories: CSS
 ---
 
 <div class="cutout-corner"></div>

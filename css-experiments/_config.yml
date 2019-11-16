@@ -7,17 +7,30 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: CSS Experiments
+lang: en_GB
 email: clarebee@protonmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Experiments in CSS, inspired by Lea Verou and CSS Tricks.
 baseurl: /css-experiments # the subpath of your site, e.g. /blog
-url: "http://css-experiments" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://example.com" # the base hostname & protocol for your site, e.g. http://example.com
+# uses site.github.url by default
 twitter_username: jekyllrb
 github_username:  jekyll
+author: clarebee
+twitter:
+  username: clarie_bee
+  card: summary
+logo: /assets/img/apple-touch-icon.png
 
 # Build settings
 markdown: kramdown
 theme: minima
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image: /assets/img/apple-touch-icon.png
 plugins:
   - jekyll-feed
   - jekyll-archives
@@ -35,6 +48,13 @@ assets:
     - assets/img
     - assets/css
 paginate: 5
+
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

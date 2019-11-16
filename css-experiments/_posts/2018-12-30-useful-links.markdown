@@ -2,7 +2,7 @@
 layout: post
 title:  "Useful Links!"
 date:   2018-12-30 12:00:50 +0000
-categories: jekyll update
+categories: Jekyll
 ---
 
 - [top links](https://github.com/jekyll)
