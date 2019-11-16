@@ -6,6 +6,7 @@ categories: CSS
 ---
 <div class="elliptical-rounding">
 </div>
+<!--more-->
 
 `border-radius` accepts different horizonal and vertical radii, if you use a slash to separate them:
 

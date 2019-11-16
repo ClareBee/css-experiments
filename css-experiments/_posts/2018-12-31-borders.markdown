@@ -6,8 +6,11 @@ categories: CSS
 ---
 <div class="transparent-border">
   <p>Semi-transparent borders using background-clip: padding-box;</p>
-  <p>Default value is border-box, so padding-box tells browser to clip the background at the padding edge rather than the border box edge
+  <p>Default value is border-box, so padding-box tells browser to clip the background at the padding edge rather than the border box edge</p>
 </div>
+
+<!--more-->
+
 <hr />
 <div class="multiple-borders">
   <p>Using layered box-shadows to emulate multiple borders via the spread radius parameter with zero offsets and zero blur</p>

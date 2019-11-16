@@ -12,6 +12,8 @@ categories: CSS
     <p>Can be changed using 'background-origin'.</p>
   </div>
 </div>
+<!--more-->
+
 <hr />
 <div class="flexible-background-calc">
   <div>

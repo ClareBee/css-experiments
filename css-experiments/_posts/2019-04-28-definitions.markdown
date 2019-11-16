@@ -10,6 +10,7 @@ categories: CSS
   <div class="default-grid radial-example">
   </div>
 </div>
+<!--more-->
 
 <blockquote>
   The linear-gradient() CSS function creates an image consisting of a progressive transition between two or more colors along a straight line. Its result is an object of the gradient data type, which is a special kind of image.

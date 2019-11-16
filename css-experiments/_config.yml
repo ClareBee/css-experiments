@@ -25,12 +25,16 @@ logo: /assets/img/apple-touch-icon.png
 # Build settings
 markdown: kramdown
 theme: minima
+minima:
+  skin: customised
+show_excerpts: true
 defaults:
   -
     scope:
       path: ""
     values:
       image: /assets/img/apple-touch-icon.png
+      excerpt_separator: <!--more-->
 plugins:
   - jekyll-feed
   - jekyll-archives
@@ -55,6 +59,8 @@ jekyll-archives:
   layout: archive
   permalinks:
     category: '/category/:name/'
+
+google_analytics: UA-NNNNNNNN-N
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

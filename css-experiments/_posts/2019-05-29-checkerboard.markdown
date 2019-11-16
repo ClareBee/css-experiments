@@ -7,6 +7,8 @@ categories: CSS
 <div class="flex-container">
   <div class="default-grid triangle-checkerboard">
   </div>
+  <!--more-->
+
   <div class="default-grid checkerboard">
   </div>
 </div>

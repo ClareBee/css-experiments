@@ -7,11 +7,14 @@ categories: CSS
 <div class="flex-container">
   <div class="default-grid grid-style">
   </div>
+  <!--more-->
+
   <div class="default-grid grid-lines">
   </div>
   <div class="default-grid blue-print">
   </div>
 </div>
+
 <hr >
 <caption>
 <ul>

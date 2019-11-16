@@ -7,6 +7,8 @@ categories: CSS
 <div class="default-grid border-frame">
  Continuous image as a border example
 </div>
+<!--more-->
+
 
 ```css
 .border-frame {

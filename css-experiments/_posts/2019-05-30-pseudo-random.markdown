@@ -6,6 +6,7 @@ categories: CSS
 ---
 <div class="default-grid random-pattern">
 </div>
+<!--more-->
 
 ### LCM - Least Common Multiple
 - The size of the tile is the LCM of the background size
