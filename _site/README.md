@@ -4,6 +4,7 @@ Customises default [minima](https://github.com/jekyll/minima) theme from [Jekyll
 How to run:
 `cd /css-experiments`
 `bundle exec jekyll serve`
+`jekyll serve --draft` to see draft posts locally
 `jekyll build` for prod
 ---
 App runs on http://127.0.0.1:4000/css-experiments/
