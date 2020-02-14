@@ -2,6 +2,7 @@
 layout: post
 title:  "Cutout Corners"
 date:   2019-06-05 12:00:00 +0000
+description: 'Linear gradients and colour stops'
 categories: CSS
 ---
 

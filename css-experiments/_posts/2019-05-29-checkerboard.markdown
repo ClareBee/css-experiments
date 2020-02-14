@@ -2,6 +2,7 @@
 layout: post
 title:  "CSS Checkerboards Using Linear Gradients"
 date:   2019-05-29 12:00:00 +0000
+description: 'Basic checked patterns'
 categories: CSS
 ---
 <div class="flex-container">

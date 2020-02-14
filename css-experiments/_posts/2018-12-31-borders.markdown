@@ -2,6 +2,7 @@
 layout: post
 title:  "CSS Borders"
 date:   2018-12-31 12:04:50 +0000
+description: 'Transparent borders, multiple borders and stitch effect'
 categories: CSS
 ---
 <div class="transparent-border">
@@ -20,8 +21,8 @@ categories: CSS
 </div>
 <hr />
 <div class="multiple-borders-2">
-  <p>If only 2 borders needed, 'outline' property  with 'border' allows for borderstyle too.</p>
-  <p>'outline-offset' also controls distance of outline from element boundaries, incl negative values.</p>
+  <p>If only 2 borders needed, 'outline' property  with 'border' allows for border style too.</p>
+  <p>'outline-offset' also controls distance of outline from element boundaries, including negative values.</p>
   <p><strong>But</strong> doesn't work well with border-radius</p>
 </div>
 <hr />

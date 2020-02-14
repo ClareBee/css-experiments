@@ -2,6 +2,7 @@
 layout: post
 title:  "Parallelograms"
 date:   2019-06-04 12:00:00 +0000
+description: 'Basic shapes using skew'
 categories: CSS
 ---
 <section>

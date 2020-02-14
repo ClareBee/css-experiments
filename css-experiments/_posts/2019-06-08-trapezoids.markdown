@@ -2,6 +2,7 @@
 layout: post
 title:  "Trapezoid Tabs"
 date:   2019-06-08 12:00:00 +0000
+description: 'ScaleY, perspective and rotate'
 categories: CSS
 ---
 <div class="trapezoid">Trapezoid</div>

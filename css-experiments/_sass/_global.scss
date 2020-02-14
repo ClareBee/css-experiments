@@ -1,3 +1,44 @@
+a:visited {
+  color: #4C4C9D;
+}
+
+a:hover, a:focus {
+  color: $button-color;
+}
+
+hr {
+  background-color: #4C4C9D;
+  height: 3px;
+}
+
+p {
+  line-height: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.pagination > * {
+  height: 44px;
+  width: 44px;
+  margin: 8px;
+  padding: 2px 8px;
+  font-size: 1.5rem;
+}
+
+section, img {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+a.btn {
+  background: $button-color;
+  color: white;
+  padding: .5rem 2.5rem;
+  border-radius: 3px;
+  width: auto;
+  align-self: flex-end;
+}
+
 .custom-list {
   list-style: none;
 }
@@ -10,4 +51,57 @@
 
 .flex-container div {
   display: inline-block;
+}
+
+.contact-form {
+  width: 50%;
+  height: 300px;
+  margin: 0 auto;
+  padding: 1rem 2rem 2rem 2rem;
+  border-radius: 5px;
+  background: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  color: $grey-color-dark;
+  label {
+    margin: 1rem 0;
+  }
+  input {
+    line-height: 1.75rem;
+    height: 2rem;
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    font-size: inherit;
+    font-style: inherit;
+  }
+  textarea {
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    font-style: inherit;
+    font-size: inherit;
+    margin: 1.5rem 0 1rem 0;
+    height: 150px;
+    padding: 5px;
+  }
+  input[type="submit"] {
+    background: $button-color;
+    color: white;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  @media only screen and (max-width: 500px){
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.post-item:not(:last-of-type) {
+  border-bottom: solid 1px lightgrey;
+  margin-bottom: 1rem;
+  padding: .5rem 0;
 }

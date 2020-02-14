@@ -2,6 +2,7 @@
 layout: post
 title:  "Diamond Images"
 date:   2019-06-05 12:00:00 +0000
+description: 'Clip-path, transform rotate and scale!'
 categories: CSS
 ---
 <br />

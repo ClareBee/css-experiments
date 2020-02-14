@@ -8,7 +8,7 @@ categories: CSS
 </div>
 <!--more-->
 
-`border-radius` accepts different horizonal and vertical radii, if you use a slash to separate them:
+`border-radius` accepts different horizontal and vertical radii, if you use a slash to separate them:
 
 ```css
   border-radius: 100px / 75px;

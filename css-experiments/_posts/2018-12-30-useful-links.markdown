@@ -2,6 +2,7 @@
 layout: post
 title:  "Useful Links!"
 date:   2018-12-30 12:00:50 +0000
+description: 'Some handy resources and plugins'
 categories: Jekyll
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title:  "CSS Linear and Radial Gradients"
 date:   2019-04-28 12:00:00 +0000
+description: 'Definition of linear and radial gradients'
 categories: CSS
 ---
 <div class="flex-container">
