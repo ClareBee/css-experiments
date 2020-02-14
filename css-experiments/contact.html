@@ -4,9 +4,9 @@ title: Contact
 ---
 <form action="https://formspree.io/clarebee@protonmail.com" method="POST" class="contact-form">
   <label for="name">Name:</label>
-  <input type="text" name="name" id="name">
+  <input type="text" name="name" id="name" required>
   <label for="email">Email:</label>
-  <input type="email" name="_replyto" id="email">
-  <textarea name="message" placeholder="Your Message"></textarea>
+  <input type="email" name="_replyto" id="email" required>
+  <textarea name="message" placeholder="Your message" required></textarea>
   <input type="submit" value="Send">
 </form>
