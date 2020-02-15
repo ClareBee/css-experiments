@@ -7,13 +7,14 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: CSS Experiments
+encoding: UTF-8
 lang: en_GB
 email: clarebee@protonmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Experiments in CSS, inspired by Lea Verou and CSS Tricks.
 baseurl: /css-experiments # the subpath of your site, e.g. /blog
 twitter_username: jekyllrb
-github_username:  jekyll
+github_username: jekyll
 author: clarebee
 twitter:
   username: clarie_bee
@@ -39,7 +40,6 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
-  - jemoji
   - jekyll-relative-links
 sass:
   style: compact # possible values: nested expanded compact compressed
