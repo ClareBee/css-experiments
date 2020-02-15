@@ -1,9 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en_GB"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/css-experiments/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/css-experiments/" rel="alternate" type="text/html" hreflang="en_GB" /><updated>2020-02-15T11:37:11+00:00</updated><id>http://localhost:4000/css-experiments/feed.xml</id><title type="html">CSS Experiments</title><subtitle>Experiments in CSS, inspired by Lea Verou and CSS Tricks.</subtitle><author><name>clarebee</name></author><entry><title type="html">Trapezoid Tabs</title><link href="http://localhost:4000/css-experiments/css/2019/06/08/trapezoids.html" rel="alternate" type="text/html" title="Trapezoid Tabs" /><published>2019-06-08T13:00:00+01:00</published><updated>2019-06-08T13:00:00+01:00</updated><id>http://localhost:4000/css-experiments/css/2019/06/08/trapezoids</id><content type="html" xml:base="http://localhost:4000/css-experiments/css/2019/06/08/trapezoids.html">&lt;div class=&quot;trapezoid&quot;&gt;Trapezoid&lt;/div&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en_GB"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/css-experiments/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/css-experiments/" rel="alternate" type="text/html" hreflang="en_GB" /><updated>2020-02-15T12:32:16+00:00</updated><id>http://localhost:4000/css-experiments/feed.xml</id><title type="html">CSS Experiments</title><subtitle>Experiments in CSS, inspired by Lea Verou and CSS Tricks.</subtitle><author><name>clarebee</name></author><entry><title type="html">Trapezoid Tabs</title><link href="http://localhost:4000/css-experiments/css/2019/06/08/trapezoids.html" rel="alternate" type="text/html" title="Trapezoid Tabs" /><published>2019-06-08T13:00:00+01:00</published><updated>2019-06-08T13:00:00+01:00</updated><id>http://localhost:4000/css-experiments/css/2019/06/08/trapezoids</id><content type="html" xml:base="http://localhost:4000/css-experiments/css/2019/06/08/trapezoids.html">&lt;div class=&quot;trapezoid&quot;&gt;Trapezoid&lt;/div&gt;
 &lt;!--more--&gt;
 
 &lt;p&gt;Trapezoid using transform with scaleY, perspective &amp;amp; rotate with a pseudo-element&lt;/p&gt;
 
-&lt;h5&gt;Lea Verou's styled tabs&lt;/h5&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.trapezoid&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;relative&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;display&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inline-block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;.5em&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1em&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;.35em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;white&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;text-align&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;center&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.trapezoid&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;::before&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;''&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;/* to generate the box */&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;position&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;absolute&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nl&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;z-index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;-1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#8E8DBE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scaleY&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1.3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;perspective&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;.5em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rotateX&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;transform-origin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;/* so base remains fixed as it rotates in space */&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Lea Verou's styled tabs&lt;/p&gt;
 
 &lt;nav class=&quot;nav left&quot;&gt;
 	&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;
@@ -13,15 +30,52 @@
 &lt;main class=&quot;content&quot;&gt;
 	Content area
 &lt;/main&gt;</content><author><name>clarebee</name></author><summary type="html">Trapezoid</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png" /><media:content medium="image" url="http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Cutout Corners</title><link href="http://localhost:4000/css-experiments/css/2019/06/05/cutout-corners.html" rel="alternate" type="text/html" title="Cutout Corners" /><published>2019-06-05T13:00:00+01:00</published><updated>2019-06-05T13:00:00+01:00</updated><id>http://localhost:4000/css-experiments/css/2019/06/05/cutout-corners</id><content type="html" xml:base="http://localhost:4000/css-experiments/css/2019/06/05/cutout-corners.html">&lt;div class=&quot;cutout-corner&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.cutout-corner&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#A9E4EF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;linear-gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;-45deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;transparent&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#A9E4EF&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
 &lt;!--more--&gt;
 
 &lt;p&gt;Gradients can accept angle direction &amp;amp; colour stop positions in absolute lengths&lt;/p&gt;
 &lt;div class=&quot;cutout-corners&quot;&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.cutout-corners&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#A9E4EF&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;linear-gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;135deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;transparent&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#A9E4EF&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;top&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;linear-gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;-135deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;transparent&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#A9E4EF&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;top&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;linear-gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;-45deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;transparent&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#A9E4EF&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;bottom&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;linear-gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;45deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;transparent&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#A9E4EF&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;bottom&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50%&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background-repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;no-repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;p&gt;All four corners using linear-gradients with appropriate degree angles, transparent colour stops and position&lt;/p&gt;
 &lt;div class=&quot;curved-cutout-corners&quot;&gt;&lt;/div&gt;
 &lt;p&gt;Curved corners using radial-gradient + transparent circles at each corner&lt;/p&gt;
-&lt;p&gt;CSS Backgrounds &amp;amp; Borders Level 4 will bring 'corner-shape'&lt;/p&gt;</content><author><name>clarebee</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png" /><media:content medium="image" url="http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Diamond Images</title><link href="http://localhost:4000/css-experiments/css/2019/06/05/diamonds.html" rel="alternate" type="text/html" title="Diamond Images" /><published>2019-06-05T13:00:00+01:00</published><updated>2019-06-05T13:00:00+01:00</updated><id>http://localhost:4000/css-experiments/css/2019/06/05/diamonds</id><content type="html" xml:base="http://localhost:4000/css-experiments/css/2019/06/05/diamonds.html">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.curved-cutout-corners&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#8E8DBE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;radial-gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;circle&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;at&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;top&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;transparent&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#8E8DBE&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;top&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;radial-gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;circle&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;at&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;top&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;transparent&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#8E8DBE&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;top&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;radial-gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;circle&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;at&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;bottom&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;transparent&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#8E8DBE&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;bottom&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;right&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;radial-gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;circle&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;at&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;bottom&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;transparent&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;15px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#8E8DBE&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;bottom&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background-size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50%&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background-repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;no-repeat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;CSS Backgrounds &amp;amp; Borders Level 4 will bring 'corner-shape'&lt;/p&gt;</content><author><name>clarebee</name></author><summary type="html">.cutout-corner { width: 100px; height: 100px; background: #A9E4EF; background: linear-gradient(-45deg, transparent 15px, #A9E4EF 0); }</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png" /><media:content medium="image" url="http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Diamond Images</title><link href="http://localhost:4000/css-experiments/css/2019/06/05/diamonds.html" rel="alternate" type="text/html" title="Diamond Images" /><published>2019-06-05T13:00:00+01:00</published><updated>2019-06-05T13:00:00+01:00</updated><id>http://localhost:4000/css-experiments/css/2019/06/05/diamonds</id><content type="html" xml:base="http://localhost:4000/css-experiments/css/2019/06/05/diamonds.html">&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;div class=&quot;diamond&quot;&gt;
   &lt;img src=&quot;/css-experiments/assets/img/ripples.jpg&quot; alt=&quot;ripples&quot; /&gt;
 &lt;/div&gt;
@@ -29,19 +83,34 @@
 
 &lt;caption&gt; Using transform rotate on div and img inside it, with scale to fit the diagonal (Pythagorean theorem!)&lt;/caption&gt;
 
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.diamond&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;200px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;45deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;overflow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;hidden&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;auto&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;margin-bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nc&quot;&gt;.diamond&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;img&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;transform&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rotate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;-45deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;scale&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1.42&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
 &lt;hr /&gt;
 
 &lt;p&gt;&lt;img src=&quot;/css-experiments/assets/img/ripples.jpg&quot; class=&quot;clip-image&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Using clip-path (borrowed from svg) to draw a polygon &amp;amp; transition on hover to manipulate the dimensions!&lt;/p&gt;</content><author><name>clarebee</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png" /><media:content medium="image" url="http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Parallelograms</title><link href="http://localhost:4000/css-experiments/css/2019/06/04/shapes.html" rel="alternate" type="text/html" title="Parallelograms" /><published>2019-06-04T13:00:00+01:00</published><updated>2019-06-04T13:00:00+01:00</updated><id>http://localhost:4000/css-experiments/css/2019/06/04/shapes</id><content type="html" xml:base="http://localhost:4000/css-experiments/css/2019/06/04/shapes.html">&lt;section&gt;
-  &lt;button class=&quot;button&quot;&gt;&lt;div&gt;Click me&lt;/div&gt;&lt;/button&gt;
-  &lt;!--more--&gt;
+&lt;p&gt;Using clip-path (borrowed from svg) to draw a polygon &amp;amp; transition on hover to manipulate the dimensions!&lt;/p&gt;
 
-  &lt;p&gt;Uses a pseudo-element w z-index of -1 for styling, so as not to skew the content itself!&lt;/p&gt;
-  &lt;p&gt;Position relative to the parent, position absolute to the generated context. All offsets set to zero means that it stretches horizontally/vertically to the size of the parent (the button)&lt;/p&gt;
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.clip-image&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;clip-path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;polygon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;50%&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50%&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;transition&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;1s&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;clip-path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-  &lt;div class=&quot;skewy&quot;&gt;&lt;div&gt;Unskewed&lt;/div&gt;&lt;div&gt;Content&lt;/div&gt;&lt;/div&gt;
-&lt;/section&gt;</content><author><name>clarebee</name></author><summary type="html">Click me</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png" /><media:content medium="image" url="http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Flexible Ellipses</title><link href="http://localhost:4000/css-experiments/css/2019/06/01/ellipses.html" rel="alternate" type="text/html" title="Flexible Ellipses" /><published>2019-06-01T13:00:00+01:00</published><updated>2019-06-01T13:00:00+01:00</updated><id>http://localhost:4000/css-experiments/css/2019/06/01/ellipses</id><content type="html" xml:base="http://localhost:4000/css-experiments/css/2019/06/01/ellipses.html">&lt;div class=&quot;elliptical-rounding&quot;&gt;
+&lt;span class=&quot;nc&quot;&gt;.clip-image&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;:hover&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;clip-path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;polygon&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;100%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name>clarebee</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png" /><media:content medium="image" url="http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Flexible Ellipses</title><link href="http://localhost:4000/css-experiments/css/2019/06/01/ellipses.html" rel="alternate" type="text/html" title="Flexible Ellipses" /><published>2019-06-01T13:00:00+01:00</published><updated>2019-06-01T13:00:00+01:00</updated><id>http://localhost:4000/css-experiments/css/2019/06/01/ellipses</id><content type="html" xml:base="http://localhost:4000/css-experiments/css/2019/06/01/ellipses.html">&lt;div class=&quot;elliptical-rounding&quot;&gt;
 &lt;/div&gt;
 &lt;!--more--&gt;
 
@@ -71,7 +140,7 @@ border-top-left-radius/ border-top-right-radius/ border-bottom-right-radius/ bor
 &lt;div class=&quot;quarter-ellipsis&quot;&gt;&lt;/div&gt;</content><author><name>clarebee</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png" /><media:content medium="image" url="http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Continuous Image Border</title><link href="http://localhost:4000/css-experiments/css/2019/05/31/cont-image-border.html" rel="alternate" type="text/html" title="Continuous Image Border" /><published>2019-05-31T13:00:00+01:00</published><updated>2019-05-31T13:00:00+01:00</updated><id>http://localhost:4000/css-experiments/css/2019/05/31/cont-image-border</id><content type="html" xml:base="http://localhost:4000/css-experiments/css/2019/05/31/cont-image-border.html">&lt;div class=&quot;default-grid border-frame&quot;&gt;
  Continuous image as a border example
 &lt;/div&gt;
-&lt;!--more--&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.border-frame&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -83,11 +152,26 @@ border-top-left-radius/ border-top-right-radius/ border-bottom-right-radius/ bor
 Default background-origin is padding-box, so needs to be set to border-box.&lt;/p&gt;
 
 &lt;div class=&quot;default-grid gradient-pattern&quot;&gt;
- using repeating-linear-gradient
+ Using repeating-linear-gradient
 &lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-css&quot; data-lang=&quot;css&quot;&gt;&lt;span class=&quot;nc&quot;&gt;.gradient-pattern&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;90%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;2em&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;transparent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nl&quot;&gt;background&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;linear-gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;white&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;white&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;padding-box&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;repeating-linear-gradient&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;-45deg&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;m&quot;&gt;#A9E4EF&lt;/span&gt;  &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#A9E4EF&lt;/span&gt;  &lt;span class=&quot;m&quot;&gt;12.5%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;transparent&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;transparent&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;25%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;m&quot;&gt;#7A306C&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;#7A306C&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;37.5%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;nb&quot;&gt;transparent&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;transparent&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;50%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;m&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;5em&lt;/span&gt; &lt;span class=&quot;m&quot;&gt;5em&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
 &lt;div class=&quot;default-grid marching-ants&quot;&gt;
- using repeating-linear-gradient &amp;amp; keyframes
+ Using repeating-linear-gradient &amp;amp; keyframes
 &lt;/div&gt;
 
 &lt;div class=&quot;footnote&quot;&gt;
@@ -102,16 +186,45 @@ Default background-origin is padding-box, so needs to be set to border-box.&lt;/
 &lt;p&gt;&lt;em&gt;Note:&lt;/em&gt; If using multiple background-image sources but also want a background-color, the background-color parameter needs to be last in the list.&lt;/p&gt;
 
 &lt;h3 id=&quot;definitions&quot;&gt;Definitions&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;background-clip&lt;/em&gt; = sets whether an element’s background extends underneath its border box, padding box, or content box.&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;background-color&lt;/em&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;background-image&lt;/em&gt; = sets one or more background images on an element.&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;background-origin&lt;/em&gt; =  sets the background’s origin: from the border start, inside the border, or inside the padding. (ignored if background-attachment is fixed)&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;background-position&lt;/em&gt; = sets the initial position for each background image. The position is relative to the position layer set by background-origin.&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;background-repeat&lt;/em&gt; = sets how background images are repeated. A background image can be repeated along the horizontal and vertical axes, or not repeated at all.&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;background-size&lt;/em&gt; = sets the size of the element’s background image. The image can be left to its natural size, stretched, or constrained to fit the available space.&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;background-attachment&lt;/em&gt; = sets whether a background image’s position is fixed within the viewport, or scrolls with its containing block.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>clarebee</name></author><summary type="html">Continuous image as a border example</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png" /><media:content medium="image" url="http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Pseudo-Random Backgrounds</title><link href="http://localhost:4000/css-experiments/css/2019/05/30/pseudo-random.html" rel="alternate" type="text/html" title="Pseudo-Random Backgrounds" /><published>2019-05-30T13:00:00+01:00</published><updated>2019-05-30T13:00:00+01:00</updated><id>http://localhost:4000/css-experiments/css/2019/05/30/pseudo-random</id><content type="html" xml:base="http://localhost:4000/css-experiments/css/2019/05/30/pseudo-random.html">&lt;div class=&quot;default-grid random-pattern&quot;&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;property&lt;/th&gt;
+      &lt;th&gt;definition&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;em&gt;background-clip&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt;sets whether an element’s background extends underneath its border box, padding box, or content box.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;em&gt;background-image&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt;sets one or more background images on an element.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;em&gt;background-origin&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt;sets the background’s origin: from the border start, inside the border, or inside the padding. (ignored if background-attachment is fixed)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;em&gt;background-position&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt;sets the initial position for each background image. The position is relative to the position layer set by background-origin.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;em&gt;background-repeat&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt;sets how background images are repeated. A background image can be repeated along the horizontal and vertical axes, or not repeated at all.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;em&gt;background-size&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt;sets the size of the element’s background image. The image can be left to its natural size, stretched, or constrained to fit the available space.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;em&gt;background-attachment&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt;sets whether a background image’s position is fixed within the viewport, or scrolls with its containing block.&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</content><author><name>clarebee</name></author><summary type="html">Continuous image as a border example .border-frame { padding: 2em; border: 2em solid transparent; background: linear-gradient(white, white) padding-box, url(../img/image.jpg) border-box 0 /cover; } Using white background to cover image background - with white added by a linear-gradient, since only the last layer can have a background-color. Default background-origin is padding-box, so needs to be set to border-box. Using repeating-linear-gradient .gradient-pattern { padding: 2em; width: 90%; border: 2em solid transparent; background: linear-gradient(white, white) padding-box, repeating-linear-gradient(-45deg, #A9E4EF 0, #A9E4EF 12.5%, transparent 0, transparent 25%, #7A306C 0, #7A306C 37.5%, transparent 0, transparent 50%) 0 / 5em 5em; } Using repeating-linear-gradient &amp;amp; keyframes 1 This is a footnote. Background shorthand = background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; Note: If one of the properties in the shorthand declaration is the bg-size property, you must use a / (slash) to separate it from the bg-position property, e.g. background:url(smiley.gif) 10px 20px/50px 50px; will result in a background image, positioned 10 pixels from the left, 20 pixels from the top, and the size of the image will be 50 pixels wide and 50 pixels high. Note: If using multiple background-image sources but also want a background-color, the background-color parameter needs to be last in the list. Definitions property definition background-clip sets whether an element’s background extends underneath its border box, padding box, or content box. background-image sets one or more background images on an element. background-origin sets the background’s origin: from the border start, inside the border, or inside the padding. (ignored if background-attachment is fixed) background-position sets the initial position for each background image. The position is relative to the position layer set by background-origin. background-repeat sets how background images are repeated. A background image can be repeated along the horizontal and vertical axes, or not repeated at all. background-size sets the size of the element’s background image. The image can be left to its natural size, stretched, or constrained to fit the available space. background-attachment sets whether a background image’s position is fixed within the viewport, or scrolls with its containing block.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png" /><media:content medium="image" url="http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Pseudo-Random Backgrounds</title><link href="http://localhost:4000/css-experiments/css/2019/05/30/pseudo-random.html" rel="alternate" type="text/html" title="Pseudo-Random Backgrounds" /><published>2019-05-30T13:00:00+01:00</published><updated>2019-05-30T13:00:00+01:00</updated><id>http://localhost:4000/css-experiments/css/2019/05/30/pseudo-random</id><content type="html" xml:base="http://localhost:4000/css-experiments/css/2019/05/30/pseudo-random.html">&lt;div class=&quot;default-grid random-pattern&quot;&gt;
 &lt;/div&gt;
 &lt;!--more--&gt;
 
@@ -203,4 +316,22 @@ Default background-origin is padding-box, so needs to be set to border-box.&lt;/
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;/caption&gt;</content><author><name>clarebee</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png" /><media:content medium="image" url="http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;/caption&gt;</content><author><name>clarebee</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png" /><media:content medium="image" url="http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">CSS Linear and Radial Gradients</title><link href="http://localhost:4000/css-experiments/css/2019/04/28/definitions.html" rel="alternate" type="text/html" title="CSS Linear and Radial Gradients" /><published>2019-04-28T13:00:00+01:00</published><updated>2019-04-28T13:00:00+01:00</updated><id>http://localhost:4000/css-experiments/css/2019/04/28/definitions</id><content type="html" xml:base="http://localhost:4000/css-experiments/css/2019/04/28/definitions.html">&lt;div class=&quot;flex-container&quot;&gt;
+  &lt;div class=&quot;default-grid linear-example&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;default-grid radial-example&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;!--more--&gt;
+
+&lt;blockquote&gt;
+  The linear-gradient() CSS function creates an image consisting of a progressive transition between two or more colors along a straight line. Its result is an object of the gradient data type, which is a special kind of image.
+  A linear gradient is defined by an axis—the gradient line—and two or more color-stop points. Each point on the axis is a distinct color; to create a smooth gradient, the linear-gradient() function draws a series of colored lines perpendicular to the gradient line, each one matching the color of the point where it intersects the gradient line.
+&lt;/blockquote&gt;
+
+&lt;caption&gt;From MDN&lt;/caption&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;background-image: linear-gradient(direction, color-stop1, color-stop2, …);&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;background-image: radial-gradient(shape size at position, start-color, …, last-color);&lt;/strong&gt;&lt;/p&gt;</content><author><name>clarebee</name></author><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png" /><media:content medium="image" url="http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>

@@ -10,7 +10,26 @@ categories: CSS
 
 <p>Trapezoid using transform with scaleY, perspective & rotate with a pseudo-element</p>
 
-<h5>Lea Verou's styled tabs</h5>
+{% highlight css %}
+.trapezoid {
+  position: relative;
+  display: inline-block;
+  padding: .5em 1em .35em;
+  color: white;
+  text-align: center;
+}
+.trapezoid::before {
+  content: '';  /* to generate the box */
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -1;
+  background: #8E8DBE;
+  transform: scaleY(1.3) perspective(.5em) rotateX(5deg);
+  transform-origin: bottom; /* so base remains fixed as it rotates in space */
+}
+{% endhighlight %}
+
+<p>Lea Verou's styled tabs</p>
 
 <nav class="nav left">
 	<a href="#">Home</a>

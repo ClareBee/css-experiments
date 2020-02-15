@@ -64,7 +64,7 @@
     <div class="default-grid border-frame">
  Continuous image as a border example
 </div>
-<!--more-->
+<p><br /></p>
 
 <figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.border-frame</span> <span class="p">{</span>
   <span class="nl">padding</span><span class="p">:</span> <span class="m">2em</span><span class="p">;</span>
@@ -76,11 +76,26 @@
 Default background-origin is padding-box, so needs to be set to border-box.</p>
 
 <div class="default-grid gradient-pattern">
- using repeating-linear-gradient
+ Using repeating-linear-gradient
 </div>
+<p><br /></p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.gradient-pattern</span> <span class="p">{</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">2em</span><span class="p">;</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">90%</span><span class="p">;</span>
+  <span class="nl">border</span><span class="p">:</span> <span class="m">2em</span> <span class="nb">solid</span> <span class="nb">transparent</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span>
+    <span class="n">linear-gradient</span><span class="p">(</span><span class="no">white</span><span class="p">,</span> <span class="no">white</span><span class="p">)</span> <span class="n">padding-box</span><span class="p">,</span>
+    <span class="n">repeating-linear-gradient</span><span class="p">(</span><span class="m">-45deg</span><span class="p">,</span>
+      <span class="m">#A9E4EF</span>  <span class="m">0</span><span class="p">,</span> <span class="m">#A9E4EF</span>  <span class="m">12.5%</span><span class="p">,</span>
+      <span class="nb">transparent</span> <span class="m">0</span><span class="p">,</span> <span class="nb">transparent</span> <span class="m">25%</span><span class="p">,</span>
+      <span class="m">#7A306C</span> <span class="m">0</span><span class="p">,</span> <span class="m">#7A306C</span> <span class="m">37.5%</span><span class="p">,</span>
+      <span class="nb">transparent</span> <span class="m">0</span><span class="p">,</span> <span class="nb">transparent</span> <span class="m">50%</span><span class="p">)</span>
+      <span class="m">0</span> <span class="p">/</span> <span class="m">5em</span> <span class="m">5em</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
 
 <div class="default-grid marching-ants">
- using repeating-linear-gradient &amp; keyframes
+ Using repeating-linear-gradient &amp; keyframes
 </div>
 
 <div class="footnote">
@@ -95,16 +110,45 @@ Default background-origin is padding-box, so needs to be set to border-box.</p>
 <p><em>Note:</em> If using multiple background-image sources but also want a background-color, the background-color parameter needs to be last in the list.</p>
 
 <h3 id="definitions">Definitions</h3>
-<ul>
-  <li><em>background-clip</em> = sets whether an element’s background extends underneath its border box, padding box, or content box.</li>
-  <li><em>background-color</em></li>
-  <li><em>background-image</em> = sets one or more background images on an element.</li>
-  <li><em>background-origin</em> =  sets the background’s origin: from the border start, inside the border, or inside the padding. (ignored if background-attachment is fixed)</li>
-  <li><em>background-position</em> = sets the initial position for each background image. The position is relative to the position layer set by background-origin.</li>
-  <li><em>background-repeat</em> = sets how background images are repeated. A background image can be repeated along the horizontal and vertical axes, or not repeated at all.</li>
-  <li><em>background-size</em> = sets the size of the element’s background image. The image can be left to its natural size, stretched, or constrained to fit the available space.</li>
-  <li><em>background-attachment</em> = sets whether a background image’s position is fixed within the viewport, or scrolls with its containing block.</li>
-</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>property</th>
+      <th>definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><em>background-clip</em></td>
+      <td>sets whether an element’s background extends underneath its border box, padding box, or content box.</td>
+    </tr>
+    <tr>
+      <td><em>background-image</em></td>
+      <td>sets one or more background images on an element.</td>
+    </tr>
+    <tr>
+      <td><em>background-origin</em></td>
+      <td>sets the background’s origin: from the border start, inside the border, or inside the padding. (ignored if background-attachment is fixed)</td>
+    </tr>
+    <tr>
+      <td><em>background-position</em></td>
+      <td>sets the initial position for each background image. The position is relative to the position layer set by background-origin.</td>
+    </tr>
+    <tr>
+      <td><em>background-repeat</em></td>
+      <td>sets how background images are repeated. A background image can be repeated along the horizontal and vertical axes, or not repeated at all.</td>
+    </tr>
+    <tr>
+      <td><em>background-size</em></td>
+      <td>sets the size of the element’s background image. The image can be left to its natural size, stretched, or constrained to fit the available space.</td>
+    </tr>
+    <tr>
+      <td><em>background-attachment</em></td>
+      <td>sets whether a background image’s position is fixed within the viewport, or scrolls with its containing block.</td>
+    </tr>
+  </tbody>
+</table>
 
   </div><a class="u-url" href="/css-experiments/css/2019/05/31/cont-image-border.html" hidden></a>
 </article>

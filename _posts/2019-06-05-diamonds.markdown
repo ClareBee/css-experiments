@@ -13,8 +13,35 @@ categories: CSS
 
 <caption> Using transform rotate on div and img inside it, with scale to fit the diagonal (Pythagorean theorem!)</caption>
 
+{% highlight css %}
+.diamond {
+  width: 200px;
+  height: 200px;
+  transform: rotate(45deg);
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.diamond img {
+  max-width: 100%;
+  height: 100%;
+  transform: rotate(-45deg) scale(1.42);
+}
+{% endhighlight %}
+
 <hr>
 
 <img src="{{site.baseurl}}/assets/img/ripples.jpg" class="clip-image" />
 
 Using clip-path (borrowed from svg) to draw a polygon & transition on hover to manipulate the dimensions!
+
+{% highlight css %}
+.clip-image {
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  transition: 1s clip-path;
+}
+
+.clip-image:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+{% endhighlight %}

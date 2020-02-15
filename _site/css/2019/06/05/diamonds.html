@@ -69,11 +69,35 @@
 
 <caption> Using transform rotate on div and img inside it, with scale to fit the diagonal (Pythagorean theorem!)</caption>
 
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.diamond</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+  <span class="nl">transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">45deg</span><span class="p">);</span>
+  <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nc">.diamond</span> <span class="nt">img</span> <span class="p">{</span>
+  <span class="nl">max-width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+  <span class="nl">transform</span><span class="p">:</span> <span class="n">rotate</span><span class="p">(</span><span class="m">-45deg</span><span class="p">)</span> <span class="n">scale</span><span class="p">(</span><span class="m">1.42</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
 <hr />
 
 <p><img src="/css-experiments/assets/img/ripples.jpg" class="clip-image" /></p>
 
 <p>Using clip-path (borrowed from svg) to draw a polygon &amp; transition on hover to manipulate the dimensions!</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.clip-image</span> <span class="p">{</span>
+  <span class="nl">clip-path</span><span class="p">:</span> <span class="n">polygon</span><span class="p">(</span><span class="m">50%</span> <span class="m">0</span><span class="p">,</span> <span class="m">100%</span> <span class="m">50%</span><span class="p">,</span> <span class="m">50%</span> <span class="m">100%</span><span class="p">,</span> <span class="m">0</span> <span class="m">50%</span><span class="p">);</span>
+  <span class="nl">transition</span><span class="p">:</span> <span class="m">1s</span> <span class="n">clip-path</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.clip-image</span><span class="nd">:hover</span> <span class="p">{</span>
+  <span class="nl">clip-path</span><span class="p">:</span> <span class="n">polygon</span><span class="p">(</span><span class="m">0</span> <span class="m">0</span><span class="p">,</span> <span class="m">100%</span> <span class="m">0</span><span class="p">,</span> <span class="m">100%</span> <span class="m">100%</span><span class="p">,</span> <span class="m">0</span> <span class="m">100%</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
 
   </div><a class="u-url" href="/css-experiments/css/2019/06/05/diamonds.html" hidden></a>
 </article>
