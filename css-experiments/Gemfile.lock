@@ -104,8 +104,6 @@ GEM
       jekyll (>= 3.3, < 5.0)
       sinatra (~> 1.4)
       sinatra-contrib (~> 1.4)
-    jekyll-archives (2.2.1)
-      jekyll (>= 3.6, < 5.0)
     jekyll-avatar (0.7.0)
       jekyll (>= 3.0, < 5.0)
     jekyll-coffeescript (1.1.1)
@@ -270,7 +268,6 @@ DEPENDENCIES
   github-pages
   jekyll (~> 3.8.5)
   jekyll-admin
-  jekyll-archives
   jekyll-feed (~> 0.6)
   jekyll-paginate (~> 1.1)
   jekyll-relative-links
