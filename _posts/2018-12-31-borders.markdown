@@ -11,8 +11,16 @@ categories: CSS
     <p>Default value is border-box, so padding-box tells browser to clip the background at the padding edge rather than the border box edge</p>
   </div>
 </div>
-
-<!--more-->
+<br />
+{% highlight css %}
+.transparent-border {
+  padding: 10px;
+  border: 10px solid hsla(0, 0%, 100%, .5);
+  background: #8E8DBE;
+  /* default value is border-box */
+  background-clip: padding-box;
+}
+{% endhighlight %}
 
 <hr />
 <div class="multiple-borders">
@@ -21,13 +29,46 @@ categories: CSS
   <p><strong>But</strong> shadows don't affect layout and are oblivious to box-sizing (would need to compensate with padding/margin)</p>
   <p><strong>Also</strong> don't react to mouse-events, so would need to use 'inset' keyword so shadows drawn inside the element, and add extra padding to compensate</p>
 </div>
+<br />
+{% highlight css %}
+.multiple-borders {
+  margin: 10px;
+  padding: 10px;
+  background: #A9E4EF;
+  box-shadow: 0 0 0 10px #7A306C ,
+              0 0 0 15px #8E8DBE,
+              0 2px 5px 15px rgba(0, 0, 0, .6);
+}
+{% endhighlight %}
 <hr />
 <div class="multiple-borders-2">
   <p>If only 2 borders needed, 'outline' property  with 'border' allows for border style too.</p>
   <p>'outline-offset' also controls distance of outline from element boundaries, including negative values.</p>
   <p><strong>But</strong> doesn't work well with border-radius</p>
 </div>
+<br />
+{% highlight css %}
+.multiple-borders-2 {
+  margin: 10px;
+  padding: 10px;
+  background: #A9E4EF;
+  border: 10px solid #7A306C ;
+  outline: 15px solid #8E8DBE;
+}
+
+{% endhighlight %}
 <hr />
 <div class="stitched-border">
   <p>Stitching effect using negative outline-offset and a dashed outline.</p>
 </div>
+<br />
+{% highlight css %}
+.stitched-border {
+  margin: 10px;
+  padding: 20px;
+  background: white;
+  border: 5px solid #7A306C ;
+  outline: 5px dashed black;
+  outline-offset: -20px;
+}
+{% endhighlight %}
