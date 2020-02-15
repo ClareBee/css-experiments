@@ -12,8 +12,6 @@ email: clarebee@protonmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Experiments in CSS, inspired by Lea Verou and CSS Tricks.
 baseurl: /css-experiments # the subpath of your site, e.g. /blog
-url: "http://example.com" # the base hostname & protocol for your site, e.g. http://example.com
-# uses site.github.url by default
 twitter_username: jekyllrb
 github_username:  jekyll
 author: clarebee
