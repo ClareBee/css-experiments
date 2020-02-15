@@ -5,9 +5,11 @@ date:   2018-12-31 12:04:50 +0000
 description: 'Transparent borders, multiple borders and stitch effect'
 categories: CSS
 ---
-<div class="transparent-border">
-  <p>Semi-transparent borders using background-clip: padding-box;</p>
-  <p>Default value is border-box, so padding-box tells browser to clip the background at the padding edge rather than the border box edge</p>
+<div class="background-for-transparent">
+  <div class="transparent-border">
+    <p>Semi-transparent borders using background-clip: padding-box;</p>
+    <p>Default value is border-box, so padding-box tells browser to clip the background at the padding edge rather than the border box edge</p>
+  </div>
 </div>
 
 <!--more-->

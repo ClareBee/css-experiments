@@ -9,19 +9,19 @@ categories: CSS
   <div class="default-grid polka-dots">
   </div>
   <!--more-->
-
+  {% highlight css %}
+  .polka-dots {
+    background: #8E8DBE;
+    background-image: radial-gradient(#A9E4EF 30%, transparent 0);
+    background-size: 30px 30px;
+  }
+  {% endhighlight %}
+  <br/>
   <div class="default-grid polka-dot-pattern">
   </div>
 </div>
-<hr >
 
 {% highlight css %}
-.polka-dots {
-  background: #8E8DBE;
-  background-image: radial-gradient(#A9E4EF 30%, transparent 0);
-  background-size: 30px 30px;
-}
-
 .polka-dot-pattern {
   background: #8E8DBE;
   background-image: radial-gradient(#A9E4EF 30%, transparent 0),

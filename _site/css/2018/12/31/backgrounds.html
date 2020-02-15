@@ -16,8 +16,8 @@
 <meta property="og:title" content="CSS Backgrounds" />
 <meta name="author" content="clarebee" />
 <meta property="og:locale" content="en_GB" />
-<meta name="description" content="Flexible background positioning and stripes" />
-<meta property="og:description" content="Flexible background positioning and stripes" />
+<meta name="description" content="Stripes" />
+<meta property="og:description" content="Stripes" />
 <link rel="canonical" href="http://localhost:4000/css-experiments/css/2018/12/31/backgrounds.html" />
 <meta property="og:url" content="http://localhost:4000/css-experiments/css/2018/12/31/backgrounds.html" />
 <meta property="og:site_name" content="CSS Experiments" />
@@ -30,7 +30,7 @@
 <meta name="twitter:site" content="@clarie_bee" />
 <meta name="twitter:creator" content="@clarebee" />
 <script type="application/ld+json">
-{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png"},"name":"clarebee"},"url":"http://localhost:4000/css-experiments/css/2018/12/31/backgrounds.html","headline":"CSS Backgrounds","dateModified":"2018-12-31T13:04:50+00:00","datePublished":"2018-12-31T13:04:50+00:00","description":"Flexible background positioning and stripes","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/css-experiments/css/2018/12/31/backgrounds.html"},"author":{"@type":"Person","name":"clarebee"},"@type":"BlogPosting","image":"http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png","@context":"https://schema.org"}</script>
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png"},"name":"clarebee"},"url":"http://localhost:4000/css-experiments/css/2018/12/31/backgrounds.html","headline":"CSS Backgrounds","dateModified":"2018-12-31T13:04:50+00:00","datePublished":"2018-12-31T13:04:50+00:00","description":"Stripes","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/css-experiments/css/2018/12/31/backgrounds.html"},"author":{"@type":"Person","name":"clarebee"},"@type":"BlogPosting","image":"http://localhost:4000/css-experiments/assets/img/apple-touch-icon.png","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/css-experiments/assets/css/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/css-experiments/feed.xml" title="CSS Experiments" /></head>
 <body><header class="site-header" role="banner">
@@ -61,85 +61,149 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <div class="flexible-background">
-  <div>
-    <p>Flexible background positioning with 'background-position' specifying offsets.</p>
-    <p>Use 'bottom right' in background shorthand as fallback.</p>
-    <p>Default positioning is relative to the padding box (not the border box or content box).</p>
-    <p>Can be changed using 'background-origin'.</p>
-  </div>
-</div>
-<!--more-->
-
-<hr />
-
-<div class="flexible-background-calc">
-  <div>
-    <p>Flexible background positioning with 'background-position' and 'calc()' specifying offsets from top left.</p>
-  </div>
-</div>
-<hr />
-
-<div class="inner-rounding">
+    <div class="inner-rounding">
   <div>
     <p>Simple inner rounding using 2 div elements</p>
   </div>
 </div>
-<hr />
+<p><br /></p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.inner-rounding</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#8E8DBE</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">.8em</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nc">.inner-rounding</span> <span class="o">&gt;</span> <span class="nt">div</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#A9E4EF</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">.8em</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><br /></p>
 
 <div class="inner-rounding-box">
   <p>Inner rounding using only 1 div element.</p>
   <p>'box-shadow' (no offsets, no blur) has rounding therefore covers gaps left by square-cornered 'outline'</p>
 </div>
+<p><br /></p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.inner-rounding-box</span> <span class="p">{</span>
+  <span class="nl">width</span><span class="p">:</span> <span class="m">300px</span><span class="p">;</span>
+  <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#A9E4EF</span><span class="p">;</span>
+  <span class="nl">border-radius</span><span class="p">:</span> <span class="m">.8em</span><span class="p">;</span>
+  <span class="nl">padding</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+  <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">0</span> <span class="m">.6em</span> <span class="m">#8E8DBE</span><span class="p">;</span>
+  <span class="nl">outline</span><span class="p">:</span> <span class="m">.6em</span> <span class="nb">solid</span> <span class="m">#8E8DBE</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><br /></p>
 <hr />
 
+<p><br /></p>
 <div class="container">
   <div class="striped-background">
     <div>
       <p>Striped background using linear-gradient using colour-stops with same position.</p>
     </div>
   </div>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.striped-background</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="m">#8E8DBE</span> <span class="m">50%</span><span class="p">,</span> <span class="m">#A9E4EF</span> <span class="m">50%</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
   <div class="striped-background-2">
     <div>
       <p>Changing size of stripes using background-size and default repeat of gradient as background-image.</p>
     </div>
   </div>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.striped-background-2</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="m">#8E8DBE</span> <span class="m">50%</span><span class="p">,</span> <span class="m">#A9E4EF</span> <span class="m">50%</span><span class="p">);</span>
+  <span class="nl">background-size</span><span class="p">:</span> <span class="m">100%</span> <span class="m">30px</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
   <div class="striped-background-3">
     <div>
       <p>Unequal width by changing color-stop size </p>
       <p>Setting second colour stop to 0 means browser will set it to the previous one.</p>
     </div>
   </div>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.striped-background-3</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="m">#8E8DBE</span> <span class="m">30%</span><span class="p">,</span> <span class="m">#A9E4EF</span> <span class="m">0</span><span class="p">);</span>
+  <span class="nl">background-size</span><span class="p">:</span> <span class="m">100%</span> <span class="m">30px</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
   <div class="striped-background-4">
     <div>
       <p>Three colours using extra values in linear-gradient.</p>
     </div>
   </div>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.striped-background-4</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="m">#8E8DBE</span> <span class="m">30%</span><span class="p">,</span> <span class="m">#A9E4EF</span> <span class="m">0</span><span class="p">,</span> <span class="m">#A9E4EF</span> <span class="m">66.6%</span><span class="p">,</span> <span class="m">#7A306C</span> <span class="m">0</span><span class="p">);</span>
+  <span class="nl">background-size</span><span class="p">:</span> <span class="m">100%</span> <span class="m">45px</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
   <div class="striped-background-5">
     <div>
       <p>Vertical stripes using gradient direction 'to right' (defaults to 'to bottom').</p>
     </div>
   </div>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.striped-background-5</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="n">to</span> <span class="nb">right</span><span class="p">,</span> <span class="m">#8E8DBE</span> <span class="m">30%</span><span class="p">,</span> <span class="m">#A9E4EF</span> <span class="m">0</span><span class="p">,</span> <span class="m">#A9E4EF</span> <span class="m">66.6%</span><span class="p">,</span> <span class="m">#7A306C</span> <span class="m">0</span><span class="p">);</span>
+  <span class="nl">background-size</span><span class="p">:</span> <span class="m">30px</span> <span class="m">100%</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
   <div class="striped-background-6">
     <div>
       <p>Diagonal stripes using gradient direction of '45deg', color stops, repeating tile.</p>
     </div>
   </div>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.striped-background-6</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">linear-gradient</span><span class="p">(</span><span class="m">45deg</span><span class="p">,</span> <span class="m">#8E8DBE</span> <span class="m">25%</span><span class="p">,</span> <span class="m">#A9E4EF</span> <span class="m">0</span><span class="p">,</span> <span class="m">#A9E4EF</span> <span class="m">50%</span><span class="p">,</span> <span class="m">#8E8DBE</span> <span class="m">0</span><span class="p">,</span> <span class="m">#8E8DBE</span> <span class="m">75%</span><span class="p">,</span> <span class="m">#A9E4EF</span> <span class="m">0</span><span class="p">);</span>
+  <span class="nl">background-size</span><span class="p">:</span> <span class="m">42px</span> <span class="m">42px</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
   <div class="striped-background-7">
     <div>
       <p>Easier diagonal stripes using 'repeating-linear-gradient()'.</p>
     </div>
   </div>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.striped-background-7</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">repeating-linear-gradient</span><span class="p">(</span><span class="m">45deg</span><span class="p">,</span> <span class="m">#8E8DBE</span><span class="p">,</span> <span class="m">#A9E4EF</span> <span class="m">30px</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
   <div class="striped-background-8">
     <div>
       <p>Using 'repeating-linear-gradient()' for stripes with adjustable angle.</p>
     </div>
   </div>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.striped-background-8</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="n">repeating-linear-gradient</span><span class="p">(</span><span class="m">25deg</span><span class="p">,</span> <span class="m">#8E8DBE</span><span class="p">,</span> <span class="m">#8E8DBE</span> <span class="m">15px</span><span class="p">,</span>  <span class="m">#A9E4EF</span> <span class="m">0</span><span class="p">,</span> <span class="m">#A9E4EF</span> <span class="m">30px</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
   <div class="striped-background-9">
     <div>
       <p>Flexible subtle stripes by using background colour and hsla and transparent.</p>
     </div>
   </div>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nc">.striped-background-9</span> <span class="p">{</span>
+  <span class="nl">background</span><span class="p">:</span> <span class="m">#7A306C</span><span class="p">;</span>
+  <span class="nl">background-image</span><span class="p">:</span>
+    <span class="n">repeating-linear-gradient</span><span class="p">(</span><span class="m">30deg</span><span class="p">,</span> <span class="n">hsla</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0%</span><span class="p">,</span> <span class="m">100%</span><span class="p">,</span> <span class="m">.1</span><span class="p">),</span>
+                                     <span class="n">hsla</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0%</span><span class="p">,</span> <span class="m">100%</span><span class="p">,</span> <span class="m">.1</span><span class="p">)</span> <span class="m">15px</span><span class="p">,</span>
+                                    <span class="nb">transparent</span> <span class="m">0</span><span class="p">,</span> <span class="nb">transparent</span> <span class="m">30px</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+
 </div>
 
   </div><a class="u-url" href="/css-experiments/css/2018/12/31/backgrounds.html" hidden></a>

@@ -1,3 +1,16 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+* {
+  box-sizing: inherit;
+}
+
 a:visited {
   color: #4C4C9D;
 }
@@ -52,12 +65,8 @@ a.btn {
 
 .flex-container {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: space-between;
-}
-
-.flex-container div {
-  display: inline-block;
 }
 
 .contact-form {

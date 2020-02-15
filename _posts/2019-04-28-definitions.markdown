@@ -8,8 +8,24 @@ categories: CSS
 <div class="flex-container">
   <div class="default-grid linear-example">
   </div>
+
+{% highlight css %}
+.linear-example {
+  background-image: linear-gradient(90deg, #A9E4EF, #8E8DBE 15%);
+  background-size: 30px;
+  background-position: center;
+}
+{% endhighlight %}
+
   <div class="default-grid radial-example">
   </div>
+
+{% highlight css %}
+.radial-example {
+  background-image:
+    radial-gradient(circle at center, #7A306C 0, #8E8DBE, #A9E4EF 100%);
+}
+{% endhighlight %}  
 </div>
 <!--more-->
 
