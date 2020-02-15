@@ -36,7 +36,6 @@ defaults:
       excerpt_separator: <!--more-->
 plugins:
   - jekyll-feed
-  - jekyll-archives
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-paginate
@@ -50,13 +49,6 @@ assets:
     - assets/img
     - assets/css
 paginate: 5
-
-jekyll-archives:
-  enabled:
-    - categories
-  layout: archive
-  permalinks:
-    category: '/category/:name/'
 
 google_analytics: UA-NNNNNNNN-N
 

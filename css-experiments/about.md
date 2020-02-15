@@ -19,6 +19,5 @@ Other features:
 - Sass
 - RSS feed
 - Pagination
-- Archive
 - Admin site
 - Formspree contact form
