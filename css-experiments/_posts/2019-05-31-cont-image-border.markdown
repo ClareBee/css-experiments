@@ -11,13 +11,13 @@ categories: CSS
 <!--more-->
 
 
-```css
+{% highlight css %}
 .border-frame {
   padding: 2em;
   border: 2em solid transparent;
   background: linear-gradient(white, white) padding-box, url(../img/image.jpg) border-box 0 /cover;
 }
-```
+{% endhighlight %}
 
 Using white background to cover image background - with white added by a linear-gradient, since only the last layer can have a background-color.
 Default background-origin is padding-box, so needs to be set to border-box.

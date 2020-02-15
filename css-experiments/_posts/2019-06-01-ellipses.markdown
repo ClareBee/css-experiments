@@ -10,9 +10,9 @@ categories: CSS
 
 `border-radius` accepts different horizontal and vertical radii, if you use a slash to separate them:
 
-```css
+{% highlight css %}  
   border-radius: 100px / 75px;
-```
+{% endhighlight %}
 
 <div class="elliptical-rounding-responsive">
 </div>
@@ -29,8 +29,8 @@ border-top-left-radius/ border-top-right-radius/ border-bottom-right-radius/ bor
 
 ### Quarter Ellipses
 One corner is 100% rounded, the other three not:
-```css
+{% highlight css %}
 border-radius: 100% 0 0 0;
-```
+{% endhighlight %}
 
 <div class="quarter-ellipsis"></div>
