@@ -2,10 +2,12 @@
 Customises default [minima](https://github.com/jekyll/minima) theme from [Jekyll](https://jekyllrb.com/)
 ---
 How to run:
+
+
 `cd /css-experiments`
 `bundle exec jekyll serve`
 `jekyll build` for prod
----
+
 ---
 App runs on http://127.0.0.1:4000/css-experiments/
 
