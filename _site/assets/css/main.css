@@ -27,7 +27,7 @@ li > ul, li > ol { margin-bottom: 0; }
 h1, h2, h3, h4, h5, h6 { font-weight: 400; }
 
 /** Links */
-a { color: #4C4C9D; text-decoration: none; }
+a { color: #4c4c9d; text-decoration: none; }
 a:visited { color: #333369; }
 a:hover { color: #434343; text-decoration: underline; }
 .social-media-list a:hover { text-decoration: none; }
@@ -203,7 +203,7 @@ body { scroll-behavior: smooth; text-rendering: optimizeSpeed; }
 
 a:visited { color: #4C4C9D; }
 
-a:hover, a:focus { color: #AE759F; }
+a:hover, a:focus { color: #ae759f; }
 
 hr { background-color: #4C4C9D; height: 3px; }
 
@@ -215,7 +215,7 @@ section, img { display: flex; flex-direction: column; border-radius: 3px; }
 
 section { background-color: white; padding: 1rem; border-radius: 5px; padding-bottom: 2rem; }
 
-a.btn { background-color: transparent; border: solid 2px #AE759F; color: #AE759F; padding: .5rem 2.5rem; border-radius: 3px; width: auto; align-self: flex-end; }
+a.btn { background-color: transparent; border: solid 2px #ae759f; color: #ae759f; padding: .5rem 2.5rem; border-radius: 3px; width: auto; align-self: flex-end; }
 
 .custom-list { list-style: none; }
 
@@ -225,7 +225,7 @@ a.btn { background-color: transparent; border: solid 2px #AE759F; color: #AE759F
 .contact-form label { margin: 1rem 0; font-size: 1.2rem; }
 .contact-form input { line-height: 1.75rem; height: 2rem; border: none; border-bottom: 1px solid lightgrey; font-size: 1.2rem; font-style: inherit; }
 .contact-form textarea { border: 1px solid lightgrey; border-radius: 3px; font-style: inherit; font-size: 1.2rem; margin: 1.5rem 0 1rem 0; height: 150px; padding: 5px; }
-.contact-form input[type="submit"] { border: solid 2px #AE759F; background: transparent; color: #AE759F; border-radius: 3px; font-size: 1.2rem; text-align: center; cursor: pointer; }
+.contact-form input[type="submit"] { border: solid 2px #ae759f; background: transparent; color: #ae759f; border-radius: 3px; font-size: 1.2rem; text-align: center; cursor: pointer; }
 .contact-form input[type="submit"]:hover { text-decoration: underline; background-color: #fdfdfd; }
 @media only screen and (max-width: 500px) { .contact-form { width: 80%; margin: 0 auto; } }
 
@@ -332,3 +332,15 @@ a.btn { background-color: transparent; border: solid 2px #AE759F; color: #AE759F
 .nav a.selected:before { background-color: #eee; margin-bottom: -.08em; }
 
 .content { border: 0.1em solid rgba(0, 0, 0, 0.4); display: block; margin-bottom: 1em; background: #eee; padding: 1em; border-radius: .15em; }
+
+.pie-chart { width: 100px; height: 100px; border-radius: 50%; background: #4c4c9d; background-image: linear-gradient(to right, transparent 50%, #655 0); }
+
+.pie-chart::before { content: ""; display: block; margin-left: 50%; height: 100%; border-radius: 0 100% 100% 0 / 50%; background-color: inherit; transform-origin: left; transform: rotate(0.1turn); animation: spin 3s linear infinite, bg 6s step-end infinite; }
+
+@keyframes spin { to { transform: rotate(0.5turn); } }
+@keyframes bg { 50% { background: #655; } }
+svg.pie { transform: rotate(-90deg); background: #4c4c9d; border-radius: 50%; }
+
+circle { fill: #4c4c9d; stroke: #655; stroke-width: 50; stroke-dasharray: 0 158; animation: fillup 5s linear infinite; }
+
+@keyframes fillup { to { stroke-dasharray: 158 158; } }
