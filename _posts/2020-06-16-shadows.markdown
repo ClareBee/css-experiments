@@ -1,0 +1,41 @@
+---
+layout: post
+title: "Shadow effects"
+date: 2020-06-16 12:00:00 +0000
+description: "One-sided and irregular drop shadows"
+categories: CSS
+---
+
+### Shadows on set sides
+
+```css
+box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.5);
+```
+
+- Box shadow => draws a rectangle with same dimensions as element, moved 2px to the right & 2px to the bottom, blurred 4px (Gaussian blur) & clipped at intersection so it appears behind
+- but there's also a 4th value: the spread radius
+  > The spread radius increases or - if negative - decreases the size of the shadow by the amount you specify.
+
+One side:
+
+```css
+box-shadow: 0 px 4px -4px black;
+```
+
+<div class="one-side"></div>
+
+Opposite sides:
+
+```css
+box-shadow: 5px 0 5px -5px black, -5px 0 5px -5px black;
+```
+
+<div class="opposite-sides"></div>
+
+### Irregular drop shadows
+
+- filter-effects: e.g. drop-shadow() (cf blur(), grayscale())
+- limited support, but they degrade gracefully!
+
+<div class="shadow-div dotted">Dotted border</div>
+<div class="shadow-div cutout">Cutout corners</div>

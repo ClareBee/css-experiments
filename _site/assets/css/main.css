@@ -340,7 +340,11 @@ a.btn { background-color: transparent; border: solid 2px #ae759f; color: #ae759f
 @keyframes spin { to { transform: rotate(0.5turn); } }
 @keyframes bg { 50% { background: #655; } }
 svg.pie { transform: rotate(-90deg); background: #4c4c9d; border-radius: 50%; }
-
-circle { fill: #4c4c9d; stroke: #655; stroke-width: 50; stroke-dasharray: 0 158; animation: fillup 5s linear infinite; }
+svg.pie circle { fill: #4c4c9d; stroke: #655; stroke-width: 50; stroke-dasharray: 0 158; animation: fillup 5s linear infinite; }
 
 @keyframes fillup { to { stroke-dasharray: 158 158; } }
+.shadow-div { color: white; position: relative; display: inline-flex; flex-direction: column; justify-content: center; vertical-align: bottom; box-sizing: border-box; width: 5.9em; height: 5.2em; margin: 0.6em; background: #4c4c9d; /*box-shadow: .1em .1em .3em rgba(0,0,0,.5);*/ -webkit-filter: drop-shadow(0.1em 0.1em 0.1em rgba(0, 0, 0, 0.5)); filter: drop-shadow(0.1em 0.1em 0.1em rgba(0, 0, 0, 0.5)); font: 200%/1.6 Roboto, Helvetica, sans-serif; text-align: center; }
+
+.dotted { background: transparent; border: 0.3em dotted #4c4c9d; color: #4c4c9d; }
+
+.cutout { border: 0.5em solid #58a; border-image: 1 url('data:image/svg+xml,	                     <svg xmlns="http://www.w3.org/2000/svg"		                 width="3" height="3" fill="%23fb3">		     	         <polygon points="0,1 1,0 2,0 3,1 3,2 2,3 1,3 0,2"/>		     	</svg>'); background-clip: padding-box; }

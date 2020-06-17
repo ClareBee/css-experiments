@@ -34,13 +34,13 @@ svg.pie {
   transform: rotate(-90deg);
   background: $brand-color;
   border-radius: 50%;
-}
-circle {
-  fill: $brand-color;
-  stroke: #655;
-  stroke-width: 50;
-  stroke-dasharray: 0 158; // 2pie * 25 = 158
-  animation: fillup 5s linear infinite;
+  circle {
+    fill: $brand-color;
+    stroke: #655;
+    stroke-width: 50;
+    stroke-dasharray: 0 158; // 2pie * 25 = 158
+    animation: fillup 5s linear infinite;
+  }
 }
 
 @keyframes fillup {
